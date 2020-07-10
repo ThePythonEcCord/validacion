@@ -44,7 +44,6 @@ if (!filter_var($correo,FILTER_VALIDATE_EMAIL)){
 <html>
 <head>
 	<title></title>
-	<style type="text/css" .$error></style>
 </head>
 <body>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post">
