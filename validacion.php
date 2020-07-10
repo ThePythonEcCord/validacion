@@ -1,7 +1,7 @@
 <?php
 $error = '';
 
-if (isset($_POST)) {
+if ($_POST) {
 	$nombre=$_POST['nombre'];
 	$correo=$_POST['correo'];
 	$celular=$_POST['celular'];
@@ -40,9 +40,9 @@ if (isset($_POST)) {
 		<input type="submit" value="Enviar">
 	</form>
 	
-	<?php if(isset($_POST) and empty($error)): ?>
-	<p>Tu nombre es: <?=$nombre?></p>
-	<p>Tu correo es: <?=$correo?></p>
+	<?php if($_POST): ?>
+	<p>Tu nombre es: <?=$_POST['nombre']?></p>
+	<p>Tu correo es: <?=$_POST['correo']?></p>
 	<?php endif; ?>
 </body>
 </html>
